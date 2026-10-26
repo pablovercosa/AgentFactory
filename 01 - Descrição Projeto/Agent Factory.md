@@ -6,7 +6,7 @@ status: "Especificação para implementação"
 language: pt-BR
 ---
 
-# Agent Factory — Projeto Técnico Consolidado
+# Agent Factory - Projeto Técnico Consolidado
 
 **Versão 1.2 | 26 de outubro de 2026**  
 **Origem:** consolidação integral do Projeto v1.1 e do Adendo Técnico nº 01.  
