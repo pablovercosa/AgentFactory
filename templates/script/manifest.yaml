@@ -1,0 +1,24 @@
+# Manifesto próprio da Agent Factory; o Script Runner deve validar este contrato.
+id: example-script
+version: 0.1.0
+summary: "{{tarefa_deterministica}}"
+entrypoint: script.py
+runtime: python3
+
+input:
+  format: json
+  schema: "{{caminho_do_schema_de_entrada}}"
+output:
+  format: json
+  schema: "{{caminho_do_schema_de_saida}}"
+
+security:
+  permissions: read-only
+  network: denied
+  external_effects: none
+  approval_required: true
+  timeout_seconds: 30
+
+validation:
+  tests: test_script.py
+  approved_hash_required: true

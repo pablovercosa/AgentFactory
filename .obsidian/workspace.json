@@ -213,11 +213,23 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b67fb28629935663",
+  "active": "c9bd3da7a36474d3",
   "lastOpenFiles": [
-    "01 - Descrição Projeto/Agent Factory.md",
-    "opencode.json",
-    "01 - Descrição Projeto",
-    "Descrição"
+    "templates/project/agent-project.yaml",
+    "templates/script/test_script.py",
+    "templates/script/script.py",
+    "templates/script/manifest.yaml",
+    "templates/skill/manifest.yaml",
+    "templates/skill/SKILL.md",
+    "templates/agent/adapters/opencode.md",
+    "templates/agent/adapters/claude.md",
+    "templates/agent/adapters",
+    "templates/agent/manifest.yaml",
+    "templates/agent/AGENT.md",
+    "docs/security",
+    "docs/operations",
+    "docs/configuration",
+    "docs/installation",
+    "01 - Descrição Projeto/Agent Factory.md"
   ]
 }

@@ -1,0 +1,31 @@
+# Manifesto próprio da Agent Factory; não é configuração nativa dos executores.
+project:
+  id: example-project
+  name: "{{nome_do_projeto}}"
+  privacy: restricted
+
+packages: [core]
+
+agents: []
+skills: []
+scripts: []
+mcp: []
+
+knowledge:
+  namespace: example_project
+  global_read: false
+  cross_project_write: false
+
+execution:
+  prefer_script: true
+  model_profile: restricted
+  require_approval_for_writes: true
+
+evolution:
+  automatic_analysis: true
+  create_pull_requests: true
+  automatic_deployment: false
+
+quota:
+  auto_resume: false
+  paid_fallback: false

@@ -1,0 +1,25 @@
+# Manifesto próprio da Agent Factory; dependências são validadas pelo Registry.
+id: example-skill
+kind: skill
+version: 0.1.0
+summary: "{{resumo_curto}}"
+
+requires:
+  skills: []
+  mcp: []
+scripts: []
+references: []
+
+security:
+  level: read-only
+  requires_approval_for_changes: true
+  secrets_in_skill: false
+
+compatibility:
+  - claude-code
+  - opencode
+
+evaluation:
+  suite: example-skill
+  regression_required: true
+  critical_regressions_allowed: 0

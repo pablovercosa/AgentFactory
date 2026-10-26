@@ -1,0 +1,32 @@
+# Manifesto próprio da Agent Factory; não é configuração nativa de Claude Code/OpenCode.
+id: example-agent
+kind: agent
+version: 0.1.0
+summary: "{{resumo_curto}}"
+
+compatibility:
+  - claude-code
+  - opencode
+
+files:
+  portable_prompt: AGENT.md
+  adapters:
+    claude_code: adapters/claude.md
+    opencode: adapters/opencode.md
+
+requires:
+  skills: []
+  mcp: []
+  scripts: []
+
+projects:
+  allowlist: []
+
+security:
+  profile: read-only
+  approval_required_for_writes: true
+  secrets_in_manifest: false
+
+evaluation:
+  suite: "{{suite_de_avaliacao}}"
+  regression_required: true
