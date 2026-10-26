@@ -1,3 +1,7 @@
 # templates/project/
 
-Modelo de `agent-project.yaml` para declarar componentes, conhecimento, execução, privacidade e cotas de um projeto. É um formato da Agent Factory, não configuração nativa dos executores.
+Modelo de `agent-project.yaml`, formato próprio da Agent Factory para declarar componentes/versões, conhecimento, executor, privacidade, permissões, cotas e orçamento de um consumidor.
+
+Preencher somente com identificadores e versões aprovados; especificar limites e fontes autorizadas; não incluir dados ou credenciais. Project Bootstrap previsto deve validar e resolver dependências, produzir lockfile/configuração candidata e apresentar lacunas para revisão, sem implantar automaticamente.
+
+Base: especificação, seções 18.2–18.3.

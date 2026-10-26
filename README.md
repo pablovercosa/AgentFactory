@@ -1,13 +1,22 @@
 # Agent Factory
 
-Raiz do projeto e deste Vault. A Agent Factory organiza componentes reutilizáveis para criar, executar, avaliar e distribuir agentes, skills e scripts.
+Plataforma modular planejada para criar, organizar, executar, avaliar e aperfeiçoar agentes, skills e scripts reutilizáveis entre projetos e executores. Obsidian organiza e documenta; Git/GitHub versiona e distribui; Claude Code e OpenCode são executores iniciais; PostgreSQL, pgvector e LightRAG sustentam conhecimento estruturado e recuperação.
 
 ## Organização
-- `agents/`, `skills/` e `scripts/`: capacidades reutilizáveis.
-- `services/`, `packages/` e `infrastructure/`: componentes da plataforma.
-- `projects/`: configurações e conhecimento específicos de cada projeto.
-- `templates/`: modelos iniciais; preencher e validar antes de publicar.
-- `.fontes/Secrets/`: credenciais; nunca registrar ou reproduzir seus valores.
-- `.outros/`: ambientes, dados operacionais, runtime e logs que precisam permanecer dentro desta pasta, mas fora do conteúdo de autoria.
+- `01 - agents/`, `02 - skills/` e `03 - scripts/`: capacidades reutilizáveis e determinísticas.
+- `04 - config/`: políticas não secretas de roteamento, cotas e decisões.
+- `05 - packages/` e `06 - projects/`: componentes compartilháveis e composições isoladas por projeto.
+- `07 - services/`: serviços planejados do Registry à Bridge; a presença dos diretórios não indica implementação.
+- `08 - knowledge/`, `09 - infrastructure/` e `10 - evaluations/`: contratos e políticas de conhecimento, infraestrutura e validação.
+- `11 - templates/`, `12 - dashboard/`, `13 - bin/` e `14 - docs/`: modelos, índices, comandos planejados e documentação.
+- Credenciais ficam em `.fontes/Secrets/`; ambientes, runtime, bancos locais e logs ficam em `.outros/`, fora do conteúdo de autoria/versionamento conforme política.
 
-A especificação principal está em `01 - Descrição Projeto/Agent Factory.md`. O que aparece no plano é proposta; não significa que o componente já esteja implementado.
+## Ciclo de trabalho
+Consultar catálogo e permissões; preferir script/MCP/API determinístico quando apropriado; executar com o agente e modelo aprovados; validar e registrar evidências; avaliar regressões; publicar mudanças somente por revisão e aprovação. O aprimoramento é supervisionado — não há treinamento automático dos pesos dos modelos.
+
+## Segurança e estado
+Projetos compartilham capacidades, não acesso automático aos dados. Conteúdo recuperado é dado, não instrução executável. Nenhum fallback pago, operação destrutiva ou mudança de produção deve ocorrer sem autorização própria. Serviços e integrações descritos aqui são planos/protótipos até haver implementação e testes.
+
+## Referências
+- [[00 - Descrição Projeto/00 - Agent Factory|Especificação técnica consolidada]] (visão, arquitetura, fases e decisões)
+- [[ARCHITECTURE|Arquitetura]] · [[ROADMAP|Roadmap]] · [[CHANGELOG|Changelog]]

@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "c60e3444b79b4437",
+        "id": "ff1f81dc9b598956",
         "type": "tabs",
         "children": [
           {
-            "id": "b67fb28629935663",
+            "id": "38a7aae6d6ab630e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00 - Descrição Projeto/00 - Agent Factory.md",
+                "file": "14 - docs/README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00 - Agent Factory"
+              "title": "README"
             }
           }
         ]
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00 - Descrição Projeto/00 - Agent Factory.md",
+                "file": "14 - docs/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "00 - Descrição Projeto/00 - Agent Factory.md",
+                "file": "14 - docs/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00 - Descrição Projeto/00 - Agent Factory.md",
+                "file": "14 - docs/README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -176,7 +176,7 @@
             "state": {
               "type": "footnotes",
               "state": {
-                "file": "00 - Descrição Projeto/00 - Agent Factory.md"
+                "file": "14 - docs/README.md"
               },
               "icon": "lucide-file-signature",
               "title": "Notas de rodapé"
@@ -213,8 +213,24 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b67fb28629935663",
+  "active": "38a7aae6d6ab630e",
   "lastOpenFiles": [
+    "13 - bin/README.md",
+    "10 - evaluations/README.md",
+    "09 - infrastructure/README.md",
+    "08 - knowledge/README.md",
+    "07 - services/README.md",
+    "06 - projects/README.md",
+    "05 - packages/01 - core/README.md",
+    "05 - packages/README.md",
+    "04 - config/README.md",
+    "02 - skills/README.md",
+    "01 - agents/README.md",
+    "ROADMAP.md",
+    "README.md",
+    "CHANGELOG.md",
+    "ARCHITECTURE.md",
+    "00 - Descrição Projeto/00 - Agent Factory.md",
     "12 - dashboard/Evolucao.md",
     "12 - dashboard/Avaliacoes.md",
     "12 - dashboard/Execucoes.md",
@@ -230,26 +246,10 @@
     "04 - config/cross-agent.yaml",
     "04 - config/quota-policy.yaml",
     "04 - config/model-routing.yaml",
-    "CHANGELOG.md",
-    "ROADMAP.md",
-    "ARCHITECTURE.md",
     "11 - templates/01 - agent/01 - adapters/opencode.md",
     "11 - templates/01 - agent/01 - adapters/claude.md",
     "11 - templates/01 - agent/01 - adapters/README.md",
     "11 - templates/01 - agent/01 - adapters",
-    "07 - services/11 - jev_decision/01 - tests/README.md",
-    "07 - services/11 - jev_decision/README.md",
-    "07 - services/11 - jev_decision/01 - tests",
-    "07 - services/10 - cross_agent_bridge/03 - tests/README.md",
-    "07 - services/10 - cross_agent_bridge/02 - policies/README.md",
-    "07 - services/10 - cross_agent_bridge/01 - adapters/README.md",
-    "07 - services/10 - cross_agent_bridge/README.md",
-    "07 - services/05 - telemetry/README.md",
-    "07 - services/09 - quota_resume_manager/README.md",
-    "07 - services/08 - model_router/README.md",
-    "07 - services/07 - project_bootstrap/README.md",
-    "07 - services/06 - evaluation/README.md",
-    "07 - services/04 - script_runner/README.md",
-    "07 - services/03 - execution_router/README.md"
+    "07 - services/11 - jev_decision/01 - tests"
   ]
 }

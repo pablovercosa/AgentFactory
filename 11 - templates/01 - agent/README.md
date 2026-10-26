@@ -1,3 +1,7 @@
 # templates/agent/
 
-Modelos de agente: instruções portáveis, manifesto próprio da Agent Factory e adaptadores por executor. O manifesto não substitui as configurações nativas.
+Modelos para definir agente com instruções portáveis, manifesto específico da Agent Factory e adaptadores de Claude Code/OpenCode. O manifesto central registra versão, dependências e políticas; arquivos de adaptador traduzem para sintaxe nativa do executor.
+
+A referência a skills/MCPs deve corresponder a dependências declaradas e autorizadas. Validar descoberta, permissões, modelo e comportamento em cada executor. Não tratar o manifesto unificado como configuração nativa automaticamente interpretada.
+
+Base: especificação, seção 11.
