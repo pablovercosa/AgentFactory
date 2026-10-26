@@ -1,0 +1,24 @@
+# Política-base de cota — exemplo não operacional.
+version: 1
+status: draft
+quota:
+  pause_on_quota: true
+  auto_resume: false
+  fallback_on_quota: false
+  allow_extra_charges: false
+resume:
+  max_attempts: 1
+  require_checkpoint: true
+  require_idempotency: true
+  approval_required: true
+states:
+  - QUEUED
+  - RUNNING
+  - PAUSED_QUOTA
+  - WAITING_RESET
+  - READY_TO_RESUME
+  - WAITING_APPROVAL
+  - COMPLETED
+  - FAILED
+  - CANCELLED
+# TODO: definir detecção verificável de cota, retenção e agendamento.

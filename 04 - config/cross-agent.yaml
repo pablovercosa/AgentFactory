@@ -1,0 +1,18 @@
+# Política-base Cross-Agent — exemplo não operacional.
+version: 1
+status: draft
+bridge:
+  enabled: false
+  projects: [] # TODO: allowlist de identificadores, sem caminhos arbitrários
+  agents: []
+  max_delegation_depth: 2
+  timeout_seconds: 240
+  max_task_characters: 12000
+  max_response_characters: 16000
+  allow_recursive_delegation: false
+  concurrent_tree_edits: false
+security:
+  pass_environment: false
+  permitted_environment_variables: []
+  sanitize_logs: true
+# Habilitar apenas após validar executável, parsing, cancelamento, isolamento e testes.

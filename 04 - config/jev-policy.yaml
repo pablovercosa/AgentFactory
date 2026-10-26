@@ -1,0 +1,12 @@
+# Política-base JEV — exemplo não operacional.
+version: 1
+status: draft
+jev:
+  enabled: false
+  use_only_after_deterministic_checks: true
+  allowed_routes: []
+  reject_choices_outside_allowlist: true
+  destructive_actions_require_human_approval: true
+  confidence_threshold: null # TODO: calibrar com dataset real; não é autorização
+  log_sensitive_inputs: false
+# TODO: validar API/SDK instalado, critérios, limiares, privacidade e fallback.

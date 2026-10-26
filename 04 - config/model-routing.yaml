@@ -1,0 +1,21 @@
+# Política-base de roteamento — exemplo não operacional.
+# Substituir placeholders somente após validação e avaliação comparativa.
+version: 1
+status: draft
+routing:
+  prefer_deterministic_tools: true
+  default_executor: null # TODO: definir executor validado
+  default_provider: null # TODO: definir provider autorizado
+  default_model: null # TODO: validar modelo e compatibilidade
+  fallback:
+    enabled: false
+    require_approval: true
+    allow_extra_charges: false
+limits:
+  max_delegation_depth: 2
+  pause_on_quota: true
+  auto_resume: false
+security:
+  project_allowlist: []
+  permitted_agents: []
+  sanitize_environment: true
